@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notification-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.notification-leave-active {
+    transition: all 0.8s ease-in-out;
+}
+
+.notification-enter-from,
+.notification-leave-to {
+    transform: translateX(-20px);
+    opacity: 0;
+}
